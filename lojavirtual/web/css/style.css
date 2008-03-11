@@ -1,0 +1,212 @@
+@import url("displaytag.css");
+@import url("thickbox.css");
+
+body {
+	margin: 20px;
+}
+
+body * {
+	font-family: Verdana;
+}
+
+input, select, textarea {
+	display: block;
+}
+input {
+	width: 200px;
+}
+
+/* loja virtual */
+body.loja {
+	margin: 10px;
+	margin-right: 250px;
+	background: #FEFFFF;
+}
+
+.loja h1 {
+	margin-bottom: 15px;
+	margin-left: -20px;
+	padding: 2px;
+	padding-left: 75px;
+	font-size: 28px;
+	height: 50px;
+	background: url('../img/fundo-titulo.png') bottom left repeat-x;
+}
+
+.cd {
+	position: relative;
+	margin: 6px;
+	padding: 2px;
+	border: 8px solid #e1e1e1;
+	background: #f5f5f8;
+	width: 230px;
+	height: 200px;
+	float: left;
+	display: inline;
+}
+
+.cd img {
+	width: 75px;
+	height: 75px;
+	float: left;
+	margin-right: 5px;
+}
+.cd span.titulo {
+	display: block;
+	font-size: 20px;
+	font-family: Tahoma, Verdana;
+}
+.cd span.artista {
+	display: block;
+	font-size: 14px;
+}
+.cd hr {
+	clear: both;
+	border:0;
+	height: 0;	
+}
+.cd ol {
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+.musica {
+	margin: 2px;
+	margin-top: 4px;
+	border-top: 2px solid #dededf;
+	border-left: 2px solid #dfdfdf;
+	border-bottom: 2px solid #bfbfbf;
+	border-right: 2px solid #bababe;
+	background: #f9f9ff;
+	padding: 3px;
+	cursor: move;
+}
+#carrinho {
+	position:absolute;
+	top: 5px;
+	right:5px;
+	width: 250px;
+	background: #edecff;
+	padding: 0;
+	z-index: 5;
+	border: 5px solid #4444ff;
+}
+
+#carrinho h2 {
+	margin: 0;
+	padding: 2px;
+	width: 250px;
+	color: white;
+	background: #4444ff;
+	font-size: 18px;
+	text-align: center;
+}
+#carrinho a {
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #4444ff;
+	font-family: Tahoma, Verdana;
+	margin: 5px;
+}
+#compras {
+	min-height: 100px;
+	width: 242px;
+	margin: 4px;
+	background: #f6f6ff;
+	padding: 0;
+}
+
+#compras ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.compra img {
+	float: left;
+	width: 25px;
+	height: 25px;
+}
+.compra {
+	background: #fdfdfd;
+	margin: 2px;
+	margin-bottom: 5px;
+}
+#total {
+	font-weight: bold;
+	font-family: Tahoma, Verdana;
+	display: block;
+	text-align: right;
+	font-size: 14px;
+}
+
+/* formulario final */
+#formulario {
+	display:none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+#formulario form {
+	height: 100%;
+	width: 100%;
+	background: #ececec;
+	opacity: 0.95;
+	padding: 80px;
+}
+
+#finaliza {
+	display:none;
+}
+#TB_ajaxContent  form {
+	margin-left: 100px;
+	margin-top: 30px;
+	width: 200px;
+}
+#TB_ajaxContent input[type=submit] {
+	margin-top: 20px;
+}
+
+#TB_ajaxContent  h3 {
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ececec;
+}
+
+#TB_ajaxContent li {
+	padding: 5px;
+	list-style-type: none;
+	border-bottom: 1px dashed #ccc;
+}
+
+/* tocador */
+iframe.player {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 10px;
+	width: 10px;
+	border: 0;
+	z-index: -10;
+}
+img.logo {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+.musica a {
+	display: none;
+}
+
+/* rodape */
+#rodape {
+	clear: both;
+	font-size: 10px;
+}
