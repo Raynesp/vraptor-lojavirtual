@@ -23,8 +23,6 @@
                 <li><a href="#fragment-3"><span>Three</span></a></li>
             </ul>
             <div id="fragment-1">
-                <form action="">
-                </form>
                 <p>First tab is active by default:</p>
                 <pre><code>$('#example > ul').tabs();</code></pre>
 
